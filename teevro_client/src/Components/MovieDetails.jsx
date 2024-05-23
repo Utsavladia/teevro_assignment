@@ -43,6 +43,9 @@ const MovieDetails = () => {
           <h2 className="text-md font-semibold text-zinc-400">
             {movie.Released}
           </h2>
+          <button className="bg-yellow-500 text-black font-bold text-md px-2 rounded-sm mt-2">
+            {movie.imdbRating}
+          </button>
         </div>
         {/* <h2 className="text-xl text-zinc-500">{movie.Year}</h2> */}
         <table className="w-full">
