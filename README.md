@@ -22,16 +22,16 @@ This is a movie search application built using React, Tailwind CSS, and Vite for
 ### Movie Details
 ![Movie Details](./moviepage.png)
 
-## Getting Started
 
 ### Prerequisites
 
 - Node.js (v18 or later)
 - npm (v7 or later)
 
-### Installation
+## Assumptions Made
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/movie-search-app.git
-   cd movie-search-app
+- **API Key**: A valid OMDb API key is required. Replace `YOUR_OMDB_API_KEY` in the code with your actual key.
+- **Data Structure**: The app assumes the OMDb API returns data as specified in their documentation.
+- **Localhost Configuration**: The frontend runs on `http://localhost:5173` and the backend on `http://localhost:5000`. Ensure no port conflicts.
+- **Network Requests**: The frontend sends requests to the local backend server. Make sure CORS is properly configured to allow these requests.
+
