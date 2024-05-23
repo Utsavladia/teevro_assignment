@@ -17,7 +17,7 @@ This is a movie search application built using React, Tailwind CSS, and Vite for
 ## Screenshots
 
 ### Home Page
-![Search Results](./screenshots/search_results.png)
+![Search Results](./Screenshot%20%2024-05-23%20%190804.png)
 
 ### Movie Details
 ![Movie Details](./screenshots/movie_details.png)
