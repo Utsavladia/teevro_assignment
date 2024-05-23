@@ -17,10 +17,10 @@ This is a movie search application built using React, Tailwind CSS, and Vite for
 ## Screenshots
 
 ### Home Page
-![Search Results](./Screenshot%20%2024-05-23%20%190804.png)
+![Search Results](./homepage.png)
 
 ### Movie Details
-![Movie Details](./screenshots/movie_details.png)
+![Movie Details](./moviepage.png)
 
 ## Getting Started
 
