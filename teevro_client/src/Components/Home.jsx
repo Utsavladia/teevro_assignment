@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import MovieCard from "../Components/MovieCard.jsx";
 
 const Home = () => {
   const [query, setQuery] = useState("");
@@ -12,7 +13,7 @@ const Home = () => {
 
   const handleSearchSubmit = async (e) => {
     e.preventDefault();
-    setQuery("");
+    // setQuery("");
     setLoading(true);
     try {
       const result = await axios.get("http://localhost:5000/api/search", {
@@ -52,15 +53,13 @@ const Home = () => {
           Filters
         </button>
       </header>
-      <main>
+      <main className="px-20 pb-20">
         {loading ? (
           <h3>Loading...</h3>
         ) : (
-          <ul>
-            {movies?.map((movie, index) => (
-              <li key={index}>
-                <h1>{movie.Title}</h1>
-              </li>
+          <ul className="grid gap-10 grid-cols-4">
+            {movies?.map((movie) => (
+              <MovieCard movie={movie} key={movie.imdbID} />
             ))}
           </ul>
         )}
