@@ -47,6 +47,19 @@ app.get("/api/search", async (req, res) => {
   }
 });
 
+app.get("/api/movie/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    console.log(id);
+    const response = await axios.get(
+      `http://www.omdbapi.com/?i=${id}&apikey=${mykey}`
+    );
+    res.json(response.data);
+  } catch (error) {
+    res.status(404).json({ error: "Movie not found" });
+  }
+});
+
 app.listen(PORT, () => {
   console.log("Server is listening on port:", PORT);
 });

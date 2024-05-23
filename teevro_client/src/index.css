@@ -6,3 +6,7 @@
   background-color: black;
   color: white;
 }
+
+.container::-webkit-scrollbar {
+  display: none;
+}
